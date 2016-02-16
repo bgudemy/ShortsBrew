@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -129,7 +130,61 @@
                     <view key="view" contentMode="scaleToFill" id="EaF-dP-nQS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taps" translatesAutoresizingMaskIntoConstraints="NO" id="hN2-iJ-FqE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="S3T-rw-9N0"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-WE-s6H">
+                                <rect key="frame" x="20" y="220" width="100" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="FOUNDED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76B-CS-zqW">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2002" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iux-lc-Ux2">
+                                        <rect key="frame" x="0.0" y="24" width="100" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="G83-Lq-NmJ">
+                                <rect key="frame" x="20" y="276" width="560" height="284"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="THIS IS HOW IT BEGAN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-w7-ohx">
+                                        <rect key="frame" x="0.0" y="0.0" width="225.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="75" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
+                                        <rect key="frame" x="0.0" y="24" width="560" height="260"/>
+                                        <mutableString key="text">In 2003 a 100-year-old empty hardware store in Bellaire, Michigan was refurbished for use as a brewpub. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story.</mutableString>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hN2-iJ-FqE" firstAttribute="top" secondItem="EaF-dP-nQS" secondAttribute="top" id="Cdx-Lv-28B"/>
+                            <constraint firstItem="cM3-bj-5cF" firstAttribute="top" secondItem="G83-Lq-NmJ" secondAttribute="bottom" constant="40" id="Gd7-aW-S04"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="G83-Lq-NmJ" secondAttribute="leading" id="H5K-Zd-liN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NMB-WE-s6H" secondAttribute="leading" id="Lca-47-f22"/>
+                            <constraint firstItem="NMB-WE-s6H" firstAttribute="top" secondItem="hN2-iJ-FqE" secondAttribute="bottom" constant="60" id="Uvp-Wn-Krs"/>
+                            <constraint firstAttribute="trailing" secondItem="hN2-iJ-FqE" secondAttribute="trailing" id="hTD-PT-N0H"/>
+                            <constraint firstItem="hN2-iJ-FqE" firstAttribute="leading" secondItem="EaF-dP-nQS" secondAttribute="leading" id="kZs-xc-NpM"/>
+                            <constraint firstItem="G83-Lq-NmJ" firstAttribute="top" secondItem="iux-lc-Ux2" secondAttribute="bottom" constant="8" id="png-eo-ZiF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G83-Lq-NmJ" secondAttribute="trailing" id="vNC-MG-dLj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvL-3H-aq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,5 +195,6 @@
     <resources>
         <image name="compass" width="35" height="35"/>
         <image name="pub" width="1500" height="1000"/>
+        <image name="taps" width="1000" height="667"/>
     </resources>
 </document>
