@@ -11,11 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var moreBtn: UIButton!
+    @IBOutlet weak var tapsBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         moreBtn.layer.cornerRadius = 5.0
+        tapsBtn.layer.cornerRadius = 5.0
     
     }
 

@@ -101,6 +101,21 @@
                                     <segue destination="Yur-8L-gS6" kind="show" id="hef-2s-sNQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njw-fm-g56">
+                                <rect key="frame" x="175" y="505" width="250" height="34"/>
+                                <color key="backgroundColor" red="0.86536287010000001" green="0.34914679279999999" blue="0.1577919408" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="9Sr-NJ-osg"/>
+                                    <constraint firstAttribute="width" constant="250" id="NbP-cy-hMG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="WHAT'S ON TAP?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JTM-zt-2sI" kind="show" action="showDetailViewController:sender:" id="RjP-cN-jAZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -108,7 +123,9 @@
                             <constraint firstItem="3rr-Cy-0Kn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Oj-2X-1ow"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3rr-Cy-0Kn" secondAttribute="bottom" id="DLY-Nv-d3d"/>
                             <constraint firstItem="UtH-Z5-wn9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gcc-At-nv7"/>
+                            <constraint firstItem="njw-fm-g56" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mwu-mT-ugx"/>
                             <constraint firstItem="3rr-Cy-0Kn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qxg-Gi-8Ts"/>
+                            <constraint firstItem="UtH-Z5-wn9" firstAttribute="top" secondItem="njw-fm-g56" secondAttribute="bottom" constant="8" id="Y6I-cn-0OC"/>
                             <constraint firstItem="Kmc-vQ-SE4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eWh-Tk-DDl"/>
                             <constraint firstAttribute="trailing" secondItem="3rr-Cy-0Kn" secondAttribute="trailing" id="iHS-yf-YfL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UtH-Z5-wn9" secondAttribute="bottom" constant="20" id="rI3-dQ-V6P"/>
@@ -116,6 +133,7 @@
                     </view>
                     <connections>
                         <outlet property="moreBtn" destination="UtH-Z5-wn9" id="GcZ-4n-0CO"/>
+                        <outlet property="tapsBtn" destination="njw-fm-g56" id="y37-Jr-ZaT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -168,7 +186,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="75" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
                                         <rect key="frame" x="0.0" y="24" width="560" height="260"/>
-                                        <mutableString key="text">In 2003 a 100-year-old empty hardware store in Bellaire, Michigan was refurbished for use as a brewpub. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story.</mutableString>
+                                        <string key="text">In 2003 a 100-year-old empty hardware store in Bellaire, Michigan was refurbished for use as a brewpub. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -207,7 +225,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvL-3H-aq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="338"/>
+            <point key="canvasLocation" x="958" y="338"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ND2-fg-tYC">
+            <objects>
+                <viewController id="JTM-zt-2sI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZRf-Sa-uHF"/>
+                        <viewControllerLayoutGuide type="bottom" id="ITB-XC-uU2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9J4-tC-93o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.3208007812" green="0.31789679279999999" blue="0.95219983549999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cA-MH-9Sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="1100"/>
         </scene>
     </scenes>
     <resources>
