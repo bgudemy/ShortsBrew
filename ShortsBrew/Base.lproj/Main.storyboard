@@ -86,50 +86,75 @@
                                     <constraint firstAttribute="width" constant="257" id="7h3-Bz-nlv"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtH-Z5-wn9">
-                                <rect key="frame" x="175" y="547" width="250" height="33"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="5oo-1P-V59"/>
-                                    <constraint firstAttribute="height" constant="33" id="X45-WO-a4o"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="MORE SHORTS' FACTS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Yur-8L-gS6" kind="show" id="hef-2s-sNQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njw-fm-g56">
-                                <rect key="frame" x="175" y="505" width="250" height="34"/>
-                                <color key="backgroundColor" red="0.86536287010000001" green="0.34914679279999999" blue="0.1577919408" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="9Sr-NJ-osg"/>
-                                    <constraint firstAttribute="width" constant="250" id="NbP-cy-hMG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="WHAT'S ON TAP?">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="JTM-zt-2sI" kind="show" action="showDetailViewController:sender:" id="RjP-cN-jAZ"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HXh-JC-e6r" userLabel="Button Stack View">
+                                <rect key="frame" x="175" y="498" width="250" height="82"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njw-fm-g56">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="34"/>
+                                        <color key="backgroundColor" red="0.86536287010000001" green="0.34914679279999999" blue="0.1577919408" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="9Sr-NJ-osg"/>
+                                            <constraint firstAttribute="width" constant="250" id="NbP-cy-hMG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="WHAT'S ON TAP?">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="JTM-zt-2sI" kind="show" action="showDetailViewController:sender:" id="RjP-cN-jAZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtH-Z5-wn9">
+                                        <rect key="frame" x="0.0" y="49" width="250" height="33"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="5oo-1P-V59"/>
+                                            <constraint firstAttribute="height" constant="33" id="X45-WO-a4o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="MORE SHORTS' FACTS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Yur-8L-gS6" kind="show" id="hef-2s-sNQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Kmc-vQ-SE4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1o7-29-bxY"/>
                             <constraint firstItem="3rr-Cy-0Kn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Oj-2X-1ow"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HXh-JC-e6r" secondAttribute="bottom" constant="20" id="Cph-IE-Flp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3rr-Cy-0Kn" secondAttribute="bottom" id="DLY-Nv-d3d"/>
-                            <constraint firstItem="UtH-Z5-wn9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gcc-At-nv7"/>
-                            <constraint firstItem="njw-fm-g56" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mwu-mT-ugx"/>
+                            <constraint firstItem="HXh-JC-e6r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EsR-xO-q4O"/>
                             <constraint firstItem="3rr-Cy-0Kn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qxg-Gi-8Ts"/>
-                            <constraint firstItem="UtH-Z5-wn9" firstAttribute="top" secondItem="njw-fm-g56" secondAttribute="bottom" constant="8" id="Y6I-cn-0OC"/>
                             <constraint firstItem="Kmc-vQ-SE4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eWh-Tk-DDl"/>
+                            <constraint firstItem="HXh-JC-e6r" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fPC-sH-YYY"/>
                             <constraint firstAttribute="trailing" secondItem="3rr-Cy-0Kn" secondAttribute="trailing" id="iHS-yf-YfL"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UtH-Z5-wn9" secondAttribute="bottom" constant="20" id="rI3-dQ-V6P"/>
+                            <constraint firstItem="HXh-JC-e6r" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wVF-LC-zT0"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EsR-xO-q4O"/>
+                                <exclude reference="fPC-sH-YYY"/>
+                                <exclude reference="wVF-LC-zT0"/>
+                                <exclude reference="Cph-IE-Flp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="fPC-sH-YYY"/>
+                                <include reference="wVF-LC-zT0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="EsR-xO-q4O"/>
+                                <include reference="Cph-IE-Flp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="moreBtn" destination="UtH-Z5-wn9" id="GcZ-4n-0CO"/>
