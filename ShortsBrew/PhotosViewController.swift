@@ -30,6 +30,8 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         
         setZoomScale()
+        
+        setupGestureRecognizer()
     }
 
     // Required delegate method for the UIScrollViewDelegate protocol
@@ -51,6 +53,7 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
         setZoomScale()
     }
     
+    // Creating UX that centers image content each time a zoom is performed
     func scrollViewDidZoom(scrollView: UIScrollView) {
         let imageViewSize = imageView.frame.size
         let scrollViewSize = scrollView.bounds.size
@@ -59,7 +62,22 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
         let horizontalPadding = imageViewSize.width < scrollViewSize.width ? (scrollViewSize.width - imageViewSize.width) / 2 : 0
         
         scrollView.contentInset = UIEdgeInsets(top: verticalPadding, left: horizontalPadding, bottom: verticalPadding, right: horizontalPadding)
-
+    }
+    
+    // Allowing for double tap gestures to zoom; first to min zoom level, then to max zoom level
+    func setupGestureRecognizer() {
+        let doubleTap = UITapGestureRecognizer(target: self, action: "handleDoubleTap:")
+        doubleTap.numberOfTapsRequired = 2
+        scrollView.addGestureRecognizer(doubleTap)
+    }
+    
+    func handleDoubleTap(recognizer: UITapGestureRecognizer) {
+        
+        if (scrollView.zoomScale > scrollView.minimumZoomScale) {
+            scrollView.setZoomScale(scrollView.minimumZoomScale, animated: true)
+        } else {
+            scrollView.setZoomScale(scrollView.maximumZoomScale, animated: true)
+        }
     }
 
     
