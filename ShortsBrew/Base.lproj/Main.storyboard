@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -48,10 +48,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vLx-P5-XrH">
-                                        <rect key="frame" x="0.0" y="84" width="257" height="176"/>
+                                        <rect key="frame" x="0.0" y="84" width="257" height="175"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHORTS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZv-d9-m3a">
-                                                <rect key="frame" x="1" y="0.0" width="257" height="74"/>
+                                                <rect key="frame" x="1" y="0.0" width="256" height="74"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="62"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -301,9 +301,9 @@
                                 </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="G83-Lq-NmJ">
-                                <rect key="frame" x="20" y="276" width="5091" height="43"/>
+                                <rect key="frame" x="21" y="276" width="5091" height="43"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="THIS IS HOW IT BEGAN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-w7-ohx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="THIS IS HOW IT BEGAN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-w7-ohx">
                                         <rect key="frame" x="0.0" y="0.0" width="226" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -312,7 +312,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="226" height="24"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="79" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="79" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
                                         <rect key="frame" x="0.0" y="24" width="5091" height="19"/>
                                         <string key="text">In 2003 a 100-year-old empty hardware store in Bellaire, Michigan was refurbished for use as a brewpub. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -442,10 +442,10 @@
             </objects>
             <point key="canvasLocation" x="977" y="338"/>
         </scene>
-        <!--View Controller-->
+        <!--Photos View Controller-->
         <scene sceneID="ND2-fg-tYC">
             <objects>
-                <viewController id="JTM-zt-2sI" sceneMemberID="viewController">
+                <viewController id="JTM-zt-2sI" customClass="PhotosViewController" customModule="ShortsBrew" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZRf-Sa-uHF"/>
                         <viewControllerLayoutGuide type="bottom" id="ITB-XC-uU2"/>
@@ -454,13 +454,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="pub" translatesAutoresizingMaskIntoConstraints="NO" id="FBO-At-dUg">
-                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="bWq-AN-3Ta" appends="YES" id="DiE-c8-p34"/>
-                                </connections>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7AW-si-Jh9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pub" translatesAutoresizingMaskIntoConstraints="NO" id="dZv-4P-3Bi">
+                                        <rect key="frame" x="0.0" y="0.0" width="1500" height="1000"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dZv-4P-3Bi" secondAttribute="bottom" id="fiA-tn-Lgd"/>
+                                    <constraint firstItem="dZv-4P-3Bi" firstAttribute="top" secondItem="7AW-si-Jh9" secondAttribute="top" id="h3M-VH-fdD"/>
+                                    <constraint firstAttribute="trailing" secondItem="dZv-4P-3Bi" secondAttribute="trailing" id="wco-4b-Uhh"/>
+                                    <constraint firstItem="dZv-4P-3Bi" firstAttribute="leading" secondItem="7AW-si-Jh9" secondAttribute="leading" id="yUT-s6-fuL"/>
+                                </constraints>
+                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q87-Tv-n1j">
                                 <rect key="frame" x="0.0" y="485" width="600" height="115"/>
                                 <subviews>
@@ -473,7 +480,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The pub is where alot of fun happens." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4p-pB-pxb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The pub is where alot of fun happens." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4p-pB-pxb">
                                         <rect key="frame" x="28" y="46" width="564" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="BAe-sX-5j5"/>
@@ -506,8 +513,10 @@
                                     <constraint firstAttribute="trailing" secondItem="n4p-pB-pxb" secondAttribute="trailing" constant="10" id="6UR-cb-uG1"/>
                                     <constraint firstItem="n4p-pB-pxb" firstAttribute="bottom" secondItem="q87-Tv-n1j" secondAttribute="bottomMargin" id="AEU-ab-OYw"/>
                                     <constraint firstItem="YaM-wz-Nhy" firstAttribute="leading" secondItem="q87-Tv-n1j" secondAttribute="leadingMargin" constant="20" id="MY3-ZC-cU0"/>
+                                    <constraint firstAttribute="bottom" secondItem="n4p-pB-pxb" secondAttribute="bottom" constant="8" id="Q5O-O0-lzA"/>
                                     <constraint firstItem="YaM-wz-Nhy" firstAttribute="top" secondItem="q87-Tv-n1j" secondAttribute="topMargin" id="Xfx-CJ-xeI"/>
                                     <constraint firstItem="n4p-pB-pxb" firstAttribute="leading" secondItem="q87-Tv-n1j" secondAttribute="leading" constant="10" id="c94-Aa-ttH"/>
+                                    <constraint firstItem="n4p-pB-pxb" firstAttribute="leading" secondItem="q87-Tv-n1j" secondAttribute="leading" constant="28" id="mKD-dc-Sj2"/>
                                     <constraint firstAttribute="height" constant="115" id="mKa-A2-oHC"/>
                                     <constraint firstAttribute="bottom" secondItem="n4p-pB-pxb" secondAttribute="bottom" constant="8" id="mM0-3x-Lja"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="YaM-wz-Nhy" secondAttribute="trailing" id="ms5-XR-h3v"/>
@@ -547,66 +556,33 @@
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="FBO-At-dUg" firstAttribute="top" secondItem="ZRf-Sa-uHF" secondAttribute="bottom" id="3bR-8E-9aI"/>
-                            <constraint firstAttribute="trailing" secondItem="FBO-At-dUg" secondAttribute="trailing" id="6Cj-tc-sH8"/>
-                            <constraint firstAttribute="bottom" secondItem="FBO-At-dUg" secondAttribute="bottom" id="GQ2-2V-3Zi"/>
+                            <constraint firstAttribute="trailing" secondItem="7AW-si-Jh9" secondAttribute="trailing" id="4wG-23-gt1"/>
+                            <constraint firstItem="ITB-XC-uU2" firstAttribute="top" secondItem="7AW-si-Jh9" secondAttribute="bottom" id="AvC-bq-Gjh"/>
                             <constraint firstItem="ITB-XC-uU2" firstAttribute="top" secondItem="q87-Tv-n1j" secondAttribute="bottom" id="Nh7-gO-k3w"/>
                             <constraint firstItem="q87-Tv-n1j" firstAttribute="centerX" secondItem="9J4-tC-93o" secondAttribute="centerX" id="PVu-3P-5oa"/>
                             <constraint firstItem="ITB-XC-uU2" firstAttribute="top" secondItem="q87-Tv-n1j" secondAttribute="bottom" id="RhN-eq-6Un"/>
-                            <constraint firstItem="FBO-At-dUg" firstAttribute="top" secondItem="ZRf-Sa-uHF" secondAttribute="bottom" constant="50" id="VGa-9a-NNa">
-                                <variation key="heightClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="FBO-At-dUg" firstAttribute="leading" secondItem="9J4-tC-93o" secondAttribute="leading" id="Zdv-Vi-ypP"/>
-                            <constraint firstItem="FBO-At-dUg" firstAttribute="top" secondItem="ZRf-Sa-uHF" secondAttribute="bottom" id="cqb-s3-qvI"/>
-                            <constraint firstAttribute="trailing" secondItem="FBO-At-dUg" secondAttribute="trailing" id="eoQ-Cn-woH"/>
-                            <constraint firstItem="FBO-At-dUg" firstAttribute="leading" secondItem="9J4-tC-93o" secondAttribute="leading" id="mVy-8F-foX"/>
+                            <constraint firstItem="7AW-si-Jh9" firstAttribute="top" secondItem="9J4-tC-93o" secondAttribute="top" id="ceV-bd-CoI"/>
                             <constraint firstAttribute="trailing" secondItem="q87-Tv-n1j" secondAttribute="trailing" id="n7G-ff-Rvg"/>
-                            <constraint firstItem="FBO-At-dUg" firstAttribute="top" secondItem="ZRf-Sa-uHF" secondAttribute="bottom" constant="50" id="pHA-Bj-gqh"/>
                             <constraint firstItem="q87-Tv-n1j" firstAttribute="leading" secondItem="9J4-tC-93o" secondAttribute="leading" id="pqR-gx-doc"/>
-                            <constraint firstItem="ITB-XC-uU2" firstAttribute="top" secondItem="FBO-At-dUg" secondAttribute="bottom" id="yIS-fU-JXe"/>
+                            <constraint firstItem="7AW-si-Jh9" firstAttribute="leading" secondItem="9J4-tC-93o" secondAttribute="leading" id="wiy-Ka-bPu"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="3bR-8E-9aI"/>
-                                <exclude reference="6Cj-tc-sH8"/>
-                                <exclude reference="GQ2-2V-3Zi"/>
-                                <exclude reference="VGa-9a-NNa"/>
-                                <exclude reference="Zdv-Vi-ypP"/>
-                                <exclude reference="cqb-s3-qvI"/>
-                                <exclude reference="eoQ-Cn-woH"/>
-                                <exclude reference="mVy-8F-foX"/>
-                                <exclude reference="pHA-Bj-gqh"/>
                                 <exclude reference="PVu-3P-5oa"/>
                                 <exclude reference="Nh7-gO-k3w"/>
-                                <exclude reference="yIS-fU-JXe"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="GQ2-2V-3Zi"/>
-                                <exclude reference="VGa-9a-NNa"/>
-                                <include reference="cqb-s3-qvI"/>
-                                <include reference="eoQ-Cn-woH"/>
-                                <include reference="mVy-8F-foX"/>
                                 <include reference="PVu-3P-5oa"/>
                                 <exclude reference="n7G-ff-Rvg"/>
                                 <exclude reference="pqR-gx-doc"/>
                                 <include reference="Nh7-gO-k3w"/>
                             </mask>
                         </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="3bR-8E-9aI"/>
-                                <include reference="6Cj-tc-sH8"/>
-                                <include reference="Zdv-Vi-ypP"/>
-                                <exclude reference="pHA-Bj-gqh"/>
-                                <include reference="yIS-fU-JXe"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cA-MH-9Sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="bWq-AN-3Ta"/>
             </objects>
             <point key="canvasLocation" x="714" y="1098"/>
         </scene>
