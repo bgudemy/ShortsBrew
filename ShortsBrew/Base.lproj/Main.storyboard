@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bj7-mf-5tH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pub" translatesAutoresizingMaskIntoConstraints="NO" id="3rr-Cy-0Kn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kmc-vQ-SE4">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kmc-vQ-SE4">
                                 <rect key="frame" x="20" y="20" width="257" height="314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="u2P-LY-H3u">
@@ -48,10 +48,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vLx-P5-XrH">
-                                        <rect key="frame" x="0.0" y="84" width="257" height="175"/>
+                                        <rect key="frame" x="0.0" y="84" width="257" height="176"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHORTS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZv-d9-m3a">
-                                                <rect key="frame" x="1" y="0.0" width="256" height="74"/>
+                                                <rect key="frame" x="1" y="0.0" width="257" height="74"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="62"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -179,6 +179,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="phd-68-klY"/>
                     <connections>
                         <outlet property="moreBtn" destination="UtH-Z5-wn9" id="GcZ-4n-0CO"/>
                         <outlet property="tapsBtn" destination="njw-fm-g56" id="y37-Jr-ZaT"/>
@@ -186,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="338"/>
+            <point key="canvasLocation" x="1074" y="338"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="PIN-rd-agV">
@@ -303,7 +304,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="G83-Lq-NmJ">
                                 <rect key="frame" x="21" y="276" width="5091" height="43"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="THIS IS HOW IT BEGAN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-w7-ohx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="THIS IS HOW IT BEGAN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-w7-ohx">
                                         <rect key="frame" x="0.0" y="0.0" width="226" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -312,7 +313,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="226" height="24"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="79" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="79" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
                                         <rect key="frame" x="0.0" y="24" width="5091" height="19"/>
                                         <string key="text">In 2003 a 100-year-old empty hardware store in Bellaire, Michigan was refurbished for use as a brewpub. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -440,7 +441,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvL-3H-aq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="338"/>
+            <point key="canvasLocation" x="1789" y="338"/>
+        </scene>
+        <!--Photo Collection View Controller-->
+        <scene sceneID="2Rm-pX-e9v">
+            <objects>
+                <collectionViewController id="Bj7-mf-5tH" customClass="PhotoCollectionViewController" customModule="ShortsBrew" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7Gt-hS-ouM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iQa-4u-LbZ">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="c7P-e1-76D" customClass="PhotosCollectionViewCell" customModule="ShortsBrew" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jrb-DD-G2h">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="jrb-DD-G2h" firstAttribute="top" secondItem="c7P-e1-76D" secondAttribute="top" id="2FN-0K-Vt6"/>
+                                    <constraint firstItem="jrb-DD-G2h" firstAttribute="leading" secondItem="c7P-e1-76D" secondAttribute="leading" id="hWC-D5-cUX"/>
+                                    <constraint firstAttribute="bottom" secondItem="jrb-DD-G2h" secondAttribute="bottom" id="pgN-YY-b5b"/>
+                                    <constraint firstAttribute="trailing" secondItem="jrb-DD-G2h" secondAttribute="trailing" id="xiT-J1-0PJ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="photoImageView" destination="jrb-DD-G2h" id="cLz-Ff-O4O"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Bj7-mf-5tH" id="8ub-Dr-Luo"/>
+                            <outlet property="delegate" destination="Bj7-mf-5tH" id="p1q-KU-XwD"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDZ-N8-ltI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="1098"/>
         </scene>
         <!--Photos View Controller-->
         <scene sceneID="ND2-fg-tYC">
@@ -457,14 +506,14 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7AW-si-Jh9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pub" translatesAutoresizingMaskIntoConstraints="NO" id="dZv-4P-3Bi">
-                                        <rect key="frame" x="0.0" y="0.0" width="1500" height="1000"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pub" translatesAutoresizingMaskIntoConstraints="NO" id="dZv-4P-3Bi">
+                                        <rect key="frame" x="0.0" y="64" width="1500" height="936"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="dZv-4P-3Bi" secondAttribute="bottom" id="fiA-tn-Lgd"/>
-                                    <constraint firstItem="dZv-4P-3Bi" firstAttribute="top" secondItem="7AW-si-Jh9" secondAttribute="top" id="h3M-VH-fdD"/>
-                                    <constraint firstAttribute="trailing" secondItem="dZv-4P-3Bi" secondAttribute="trailing" id="wco-4b-Uhh"/>
+                                    <constraint firstAttribute="bottom" secondItem="dZv-4P-3Bi" secondAttribute="bottom" constant="-400" id="fiA-tn-Lgd"/>
+                                    <constraint firstItem="dZv-4P-3Bi" firstAttribute="top" secondItem="7AW-si-Jh9" secondAttribute="top" constant="64" id="h3M-VH-fdD"/>
+                                    <constraint firstAttribute="trailing" secondItem="dZv-4P-3Bi" secondAttribute="trailing" constant="-900" id="wco-4b-Uhh"/>
                                     <constraint firstItem="dZv-4P-3Bi" firstAttribute="leading" secondItem="7AW-si-Jh9" secondAttribute="leading" id="yUT-s6-fuL"/>
                                 </constraints>
                             </scrollView>
@@ -584,7 +633,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cA-MH-9Sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="1098"/>
+            <point key="canvasLocation" x="844" y="1098"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NTV-Ky-6vC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fQA-Pl-9Ol" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f8H-zD-crn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="H8l-Y1-wci"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pgi-ZJ-J3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="338"/>
         </scene>
     </scenes>
     <resources>
