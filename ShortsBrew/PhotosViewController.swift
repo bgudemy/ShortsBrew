@@ -17,21 +17,23 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
 
         imageView = UIImageView(image: UIImage(named: "pub.jpeg"))
+       // imageView.contentMode = UIViewContentMode.ScaleToFill
         
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.backgroundColor = UIColor.blackColor()
         scrollView.contentSize = imageView.bounds.size
         scrollView.autoresizingMask = [ .FlexibleWidth, .FlexibleHeight ]
-        scrollView.contentOffset = CGPoint(x: 750, y: 500)
+    //    scrollView.contentOffset = CGPoint(x: 750, y: 500)
         
         scrollView.addSubview(imageView)
         view.addSubview(scrollView)
         
         scrollView.delegate = self
         
-        setZoomScale()
+  //      setZoomScale()
         
         setupGestureRecognizer()
+        
     }
 
     // Required delegate method for the UIScrollViewDelegate protocol
@@ -45,8 +47,9 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
         let widthScale = scrollViewSize.width / imageViewSize.width
         let heightScale = scrollViewSize.height / imageViewSize.height
         
-        scrollView.minimumZoomScale = min(widthScale, heightScale)
-        scrollView.zoomScale = 1.0
+        let minZoomScale = min(widthScale, heightScale)
+        scrollView.minimumZoomScale = minZoomScale
+        scrollView.zoomScale = minZoomScale
     }
     
     override func viewWillLayoutSubviews() {

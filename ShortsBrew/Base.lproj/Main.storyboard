@@ -303,7 +303,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="G83-Lq-NmJ">
                                 <rect key="frame" x="21" y="276" width="5091" height="43"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="THIS IS HOW IT BEGAN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-w7-ohx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="THIS IS HOW IT BEGAN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-w7-ohx">
                                         <rect key="frame" x="0.0" y="0.0" width="226" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -312,7 +312,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="226" height="24"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="79" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="79" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
                                         <rect key="frame" x="0.0" y="24" width="5091" height="19"/>
                                         <string key="text">In 2003 a 100-year-old empty hardware store in Bellaire, Michigan was refurbished for use as a brewpub. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
