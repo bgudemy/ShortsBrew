@@ -17,7 +17,6 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
 
         imageView = UIImageView(image: UIImage(named: "pub.jpeg"))
-       // imageView.contentMode = UIViewContentMode.ScaleToFill
         
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.backgroundColor = UIColor.blackColor()
@@ -29,8 +28,6 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
         view.addSubview(scrollView)
         
         scrollView.delegate = self
-        
-  //      setZoomScale()
         
         setupGestureRecognizer()
         
@@ -51,7 +48,8 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
         scrollView.minimumZoomScale = minZoomScale
         scrollView.zoomScale = minZoomScale
     }
-    
+
+    // this is crucial for loading the imageView centered and at aspect fit!
     override func viewWillLayoutSubviews() {
         setZoomScale()
     }
