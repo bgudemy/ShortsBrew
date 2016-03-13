@@ -10,7 +10,7 @@ import UIKit
 
 class BeerListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
     
     var beers: [String] = ["Noble Chaos", "MMMKay", "Ermergerden", "Cats Pajamamas", "Space Rock", "Huma Lupa Licious"]
     
@@ -34,11 +34,53 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
         // Need to create the cell as UITableViewCell
         let cell = tableView.dequeueReusableCellWithIdentifier("beer")! as UITableViewCell
    
-        cell.textLabel?.text = beers[indexPath.row]
+        cell.textLabel?.text = self.beers[indexPath.row]
         
         return cell
     }
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.performSegueWithIdentifier("showBeerDetailSegue", sender: self)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     //   print("\(self.tableView.indexPathForSelectedRow!) was selected ")
+        
+        if (segue.identifier == "showBeerDetailSegue") {
+            
+            var nextView: BeerDetailViewController = segue.destinationViewController as! BeerDetailViewController
+    
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+            
+                let nameOfBeerSelected = self.beers[indexPath.row]
+                
+                nextView.beerFromSegue = nameOfBeerSelected
+
+                self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
+            }
+            
+        }
+        
+    }
+    
+    
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
