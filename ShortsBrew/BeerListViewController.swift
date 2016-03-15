@@ -12,7 +12,7 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
  
     @IBOutlet var tableView: UITableView!
     
-    var beers: [String] = ["Noble Chaos", "MMMKay", "Ermergerden", "Cats Pajamamas", "Space Rock", "Huma Lupa Licious"]
+    var beers: [String] = ["Alien Einstein", "MMMKAY", "Ermagerdness", "Superfluid", "Locals", "Bim-Bam-Boom"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,23 +26,36 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
         return beers.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        // Need to create the cell as UITableViewCell
-        let cell = tableView.dequeueReusableCellWithIdentifier("beer")! as UITableViewCell
-   
-        cell.textLabel?.text = self.beers[indexPath.row]
-        
-        return cell
+        // Need to create the cell as UITableViewCell or custom TableViewCell
+        if let cell = tableView.dequeueReusableCellWithIdentifier("BeerListCell") as? BeerListCell {
+            
+            var img: UIImage!
+            
+            if let beerImg = UIImage(named: "\(beers[indexPath.row])") {
+            
+                img = beerImg
+            } else {
+                
+                img = UIImage(named: "Placeholder")
+            }
+            
+            cell.configureCell(img, beerName: "\(beers[indexPath.row])")
+            return cell
+        } else {
+         
+            return BeerListCell()
+        }
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         self.performSegueWithIdentifier("showBeerDetailSegue", sender: self)
-        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -61,9 +74,7 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
                 self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
             }
-            
         }
-        
     }
     
     
