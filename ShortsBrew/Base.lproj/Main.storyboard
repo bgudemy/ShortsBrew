@@ -726,7 +726,7 @@
             </objects>
             <point key="canvasLocation" x="-709.5" y="1059"/>
         </scene>
-        <!--Photos View Controller-->
+        <!--Photo-->
         <scene sceneID="ND2-fg-tYC">
             <objects>
                 <viewController id="JTM-zt-2sI" customClass="PhotosViewController" customModule="ShortsBrew" customModuleProvider="target" sceneMemberID="viewController">
@@ -741,14 +741,14 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7AW-si-Jh9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pub" translatesAutoresizingMaskIntoConstraints="NO" id="dZv-4P-3Bi">
-                                        <rect key="frame" x="0.0" y="0.0" width="1500" height="1000"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pub" translatesAutoresizingMaskIntoConstraints="NO" id="dZv-4P-3Bi">
+                                        <rect key="frame" x="0.0" y="65" width="1500" height="935"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="dZv-4P-3Bi" secondAttribute="bottom" id="fiA-tn-Lgd"/>
-                                    <constraint firstItem="dZv-4P-3Bi" firstAttribute="top" secondItem="7AW-si-Jh9" secondAttribute="top" id="h3M-VH-fdD"/>
-                                    <constraint firstAttribute="trailing" secondItem="dZv-4P-3Bi" secondAttribute="trailing" id="wco-4b-Uhh"/>
+                                    <constraint firstAttribute="bottom" secondItem="dZv-4P-3Bi" secondAttribute="bottom" constant="-400" id="fiA-tn-Lgd"/>
+                                    <constraint firstItem="dZv-4P-3Bi" firstAttribute="top" secondItem="7AW-si-Jh9" secondAttribute="top" constant="65" id="h3M-VH-fdD"/>
+                                    <constraint firstAttribute="trailing" secondItem="dZv-4P-3Bi" secondAttribute="trailing" constant="-900" id="wco-4b-Uhh"/>
                                     <constraint firstItem="dZv-4P-3Bi" firstAttribute="leading" secondItem="7AW-si-Jh9" secondAttribute="leading" id="yUT-s6-fuL"/>
                                 </constraints>
                             </scrollView>
@@ -865,10 +865,19 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Photo" id="DxJ-7w-q94">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="fJH-qF-noa">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ofA-cH-Bs5" kind="unwind" unwindAction="unwindForSegue:" id="Ry6-YL-8PX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cA-MH-9Sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ofA-cH-Bs5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="560" y="1059"/>
+            <point key="canvasLocation" x="2181" y="1097"/>
         </scene>
         <!--Photos-->
         <scene sceneID="doK-XQ-PpO">
@@ -877,7 +886,8 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TXw-cL-1HE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fXi-wX-ruY">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="fXi-wX-ruY">
                             <size key="itemSize" width="300" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -905,6 +915,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="photoImageView" destination="gkU-F9-rpj" id="bea-yx-FyG"/>
+                                    <segue destination="epR-hH-ciW" kind="presentation" identifier="showPhoto" id="d0H-2t-o3r"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -917,7 +928,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWE-0d-pG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1887" y="911"/>
+            <point key="canvasLocation" x="815" y="1097"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MOf-iD-yXd">
@@ -935,7 +946,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXl-08-bvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="834"/>
+            <point key="canvasLocation" x="612" y="1059"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QZD-zC-mIR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="epR-hH-ciW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T7Y-zq-VDu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JTM-zt-2sI" kind="relationship" relationship="rootViewController" id="jf1-sM-hAA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nte-rI-CMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="1097"/>
         </scene>
     </scenes>
     <resources>

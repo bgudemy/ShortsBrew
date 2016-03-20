@@ -64,6 +64,23 @@ class PhotoCollectionViewController: UICollectionViewController {
     
         return cell
     }
+    
+    @IBAction func unwindForSegue(segue: UIStoryboardSegue) {
+    
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showPhoto" {
+            if let indexPaths = collectionView?.indexPathsForSelectedItems() {
+                let destinationViewController = segue.destinationViewController as! UINavigationController
+                let photoVC = destinationViewController.viewControllers[0] as! PhotosViewController
+                photoVC.imageFromCollection = photos[indexPaths[0].row]
+                print("\(photoVC.imageFromCollection)")
+                print("just before segue")
+                collectionView?.deselectItemAtIndexPath(indexPaths[0], animated: false)
+            }
+        }
+    }
 
     // MARK: UICollectionViewDelegate
 

@@ -12,11 +12,12 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
     
     var scrollView: UIScrollView!
     var imageView: UIImageView!
+    var imageFromCollection: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageView = UIImageView(image: UIImage(named: "pub.jpeg"))
+        imageView = UIImageView(image: UIImage(named: "\(imageFromCollection)"))
         
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.backgroundColor = UIColor.blackColor()
