@@ -14,6 +14,8 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var beers: [String] = ["Alien Einstein", "MMMKAY", "Ermagerdness", "Superfluid", "Locals", "Bim-Bam-Boom"]
     
+    var abv: [String] = ["5.6%","6.7%","4.7%","7.7%","3.5%","5.2%" ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,7 +47,8 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
                 img = UIImage(named: "Placeholder")
             }
             
-            cell.configureCell(img, beerName: "\(beers[indexPath.row])")
+            cell.configureCell(img, beerName: "\(beers[indexPath.row])", abv: "\(abv[indexPath.row])")
+            
             return cell
         } else {
          
@@ -68,8 +71,10 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
             if let indexPath = self.tableView.indexPathForSelectedRow {
             
                 let nameOfBeerSelected = self.beers[indexPath.row]
+                let beerImageSelected = UIImage(named: "\(beers[indexPath.row])")
                 
                 nextView.beerFromSegue = nameOfBeerSelected
+                nextView.beerImageFromSegue = beerImageSelected
 
                 self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
@@ -77,6 +82,10 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
+    @IBAction func backPressed(sender: AnyObject) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     
     
