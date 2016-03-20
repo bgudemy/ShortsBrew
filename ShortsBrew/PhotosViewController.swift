@@ -13,11 +13,15 @@ class PhotosViewController: UIViewController, UIScrollViewDelegate {
     var scrollView: UIScrollView!
     var imageView: UIImageView!
     var imageFromCollection: String = ""
+    var photoTitle: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         imageView = UIImageView(image: UIImage(named: "\(imageFromCollection)"))
+        
+        photoTitle = "\(imageFromCollection)"
+        navigationItem.title = photoTitle
         
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.backgroundColor = UIColor.blackColor()
