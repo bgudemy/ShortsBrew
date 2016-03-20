@@ -877,7 +877,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cA-MH-9Sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ofA-cH-Bs5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2181" y="1097"/>
+            <point key="canvasLocation" x="1375" y="1089"/>
         </scene>
         <!--Photos-->
         <scene sceneID="doK-XQ-PpO">
@@ -930,12 +930,21 @@
                                 <segue destination="qbp-al-QuB" kind="unwind" unwindAction="unwindForSegue:" id="itf-UT-h7P"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Share" style="plain" id="gmI-Ui-ws5">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="shareBtnPressed:" destination="BuO-ji-U12" id="zah-g5-eZf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="shareBtn" destination="gmI-Ui-ws5" id="4gR-sQ-8yg"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWE-0d-pG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="qbp-al-QuB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="815" y="1097"/>
+            <point key="canvasLocation" x="652" y="1089"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MOf-iD-yXd">
@@ -971,7 +980,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nte-rI-CMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="1097"/>
+            <point key="canvasLocation" x="1322" y="1059"/>
         </scene>
     </scenes>
     <resources>
