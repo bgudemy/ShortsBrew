@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30A86AA1C9F028A007A8A9C /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A86A91C9F028A007A8A9C /* PhotoCollectionViewCell.swift */; };
+		D30A86AC1C9F02B1007A8A9C /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A86AB1C9F02B1007A8A9C /* PhotoCollectionViewController.swift */; };
 		D34A86CA1C93875E00FFEEB4 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A86C91C93875E00FFEEB4 /* BeerListViewController.swift */; };
 		D3544C6B1C8E7EF500F4975B /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3544C6A1C8E7EF500F4975B /* PhotosViewController.swift */; };
 		D37560BE1C979A6800AB3036 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37560BD1C979A6800AB3036 /* BeerListCell.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D30A86A91C9F028A007A8A9C /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D30A86AB1C9F02B1007A8A9C /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		D34A86C91C93875E00FFEEB4 /* BeerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		D3544C6A1C8E7EF500F4975B /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		D37560BD1C979A6800AB3036 /* BeerListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
@@ -45,6 +49,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D30A86AD1C9F02BB007A8A9C /* Beers */ = {
+			isa = PBXGroup;
+			children = (
+				D34A86C91C93875E00FFEEB4 /* BeerListViewController.swift */,
+				D37560BD1C979A6800AB3036 /* BeerListCell.swift */,
+				D3770C571C94E750009D8AC6 /* BeerDetailViewController.swift */,
+			);
+			name = Beers;
+			sourceTree = "<group>";
+		};
+		D30A86AE1C9F02C6007A8A9C /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				D3544C6A1C8E7EF500F4975B /* PhotosViewController.swift */,
+				D30A86AB1C9F02B1007A8A9C /* PhotoCollectionViewController.swift */,
+				D30A86A91C9F028A007A8A9C /* PhotoCollectionViewCell.swift */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
 		D386D9421C72D47D00A11FC0 = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +88,11 @@
 		D386D94D1C72D47D00A11FC0 /* ShortsBrew */ = {
 			isa = PBXGroup;
 			children = (
+				D30A86AE1C9F02C6007A8A9C /* Photos */,
+				D30A86AD1C9F02BB007A8A9C /* Beers */,
 				D386D94E1C72D47D00A11FC0 /* AppDelegate.swift */,
 				D386D9501C72D47D00A11FC0 /* ViewController.swift */,
 				D3A4A3391C73EA80006757ED /* DetailViewController.swift */,
-				D3544C6A1C8E7EF500F4975B /* PhotosViewController.swift */,
-				D34A86C91C93875E00FFEEB4 /* BeerListViewController.swift */,
-				D37560BD1C979A6800AB3036 /* BeerListCell.swift */,
-				D3770C571C94E750009D8AC6 /* BeerDetailViewController.swift */,
 				D386D9521C72D47D00A11FC0 /* Main.storyboard */,
 				D386D9551C72D47D00A11FC0 /* Assets.xcassets */,
 				D386D9571C72D47D00A11FC0 /* LaunchScreen.storyboard */,
@@ -151,8 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A4A33A1C73EA80006757ED /* DetailViewController.swift in Sources */,
+				D30A86AA1C9F028A007A8A9C /* PhotoCollectionViewCell.swift in Sources */,
 				D3770C581C94E750009D8AC6 /* BeerDetailViewController.swift in Sources */,
 				D3544C6B1C8E7EF500F4975B /* PhotosViewController.swift in Sources */,
+				D30A86AC1C9F02B1007A8A9C /* PhotoCollectionViewController.swift in Sources */,
 				D34A86CA1C93875E00FFEEB4 /* BeerListViewController.swift in Sources */,
 				D37560BE1C979A6800AB3036 /* BeerListCell.swift in Sources */,
 				D386D9511C72D47D00A11FC0 /* ViewController.swift in Sources */,
