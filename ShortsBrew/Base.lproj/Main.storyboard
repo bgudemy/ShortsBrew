@@ -321,7 +321,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="G83-Lq-NmJ">
                                 <rect key="frame" x="21" y="276" width="5091" height="43"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="THIS IS HOW IT BEGAN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-w7-ohx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="THIS IS HOW IT BEGAN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-w7-ohx">
                                         <rect key="frame" x="0.0" y="0.0" width="226" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -330,7 +330,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="226" height="24"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="79" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="79" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-et-z1Y">
                                         <rect key="frame" x="0.0" y="24" width="5091" height="19"/>
                                         <string key="text">In 2003 a 100-year-old empty hardware store in Bellaire, Michigan was refurbished for use as a brewpub. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story. The pub opened on April 26, 2004, initially housing a seven barrel brewing system utilizing five fermentors and five serving tanks. First year production totaled 178 barrels. During the fall of 2006, Short began work on The Imperial Beer Series. By 2007 the 13 series beers were released, each one with its own trading card and story.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -883,38 +883,53 @@
         <scene sceneID="doK-XQ-PpO">
             <objects>
                 <collectionViewController id="BuO-ji-U12" customClass="PhotoCollectionViewController" customModule="ShortsBrew" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TXw-cL-1HE">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="TXw-cL-1HE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="fXi-wX-ruY">
-                            <size key="itemSize" width="300" height="200"/>
+                            <size key="itemSize" width="298" height="314"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionCell" id="j99-ay-ajl" customClass="PhotoCollectionViewCell" customModule="ShortsBrew" customModuleProvider="target">
-                                <rect key="frame" x="150" y="64" width="300" height="200"/>
+                                <rect key="frame" x="151" y="64" width="298" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="298" height="314"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gkU-F9-rpj">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gkU-F9-rpj">
+                                            <rect key="frame" x="0.0" y="0.0" width="298" height="213"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKE-Po-eKE">
+                                            <rect key="frame" x="18" y="214" width="262" height="100"/>
+                                            <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="9Hz-Pg-myx"/>
+                                            </constraints>
+                                            <string key="text">This is sample text. This is sample text.  This is sample text.  This is sample text. This is sample text. This is sample text. This is sample text. </string>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="dKE-Po-eKE" firstAttribute="leading" secondItem="j99-ay-ajl" secondAttribute="leadingMargin" constant="10" id="7xv-un-yxX"/>
                                     <constraint firstItem="gkU-F9-rpj" firstAttribute="top" secondItem="j99-ay-ajl" secondAttribute="topMargin" constant="-8" id="ChX-7o-6Yd"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="dKE-Po-eKE" secondAttribute="trailing" constant="10" id="RBZ-G0-Crn"/>
                                     <constraint firstItem="gkU-F9-rpj" firstAttribute="leading" secondItem="j99-ay-ajl" secondAttribute="leadingMargin" constant="-8" id="WNc-MG-m1a"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="gkU-F9-rpj" secondAttribute="trailing" constant="-8" id="fQf-Vm-z4P"/>
-                                    <constraint firstItem="gkU-F9-rpj" firstAttribute="bottom" secondItem="j99-ay-ajl" secondAttribute="bottomMargin" constant="8" id="oe7-gS-Pxc"/>
+                                    <constraint firstItem="dKE-Po-eKE" firstAttribute="top" secondItem="gkU-F9-rpj" secondAttribute="bottom" constant="1" id="nVV-zD-IGy"/>
+                                    <constraint firstItem="gkU-F9-rpj" firstAttribute="bottom" secondItem="j99-ay-ajl" secondAttribute="bottomMargin" constant="-93" id="oe7-gS-Pxc"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="photoImageView" destination="gkU-F9-rpj" id="bea-yx-FyG"/>
+                                    <outlet property="photoLbl" destination="dKE-Po-eKE" id="H5S-C1-a0e"/>
                                     <segue destination="epR-hH-ciW" kind="presentation" identifier="showPhoto" id="d0H-2t-o3r"/>
                                 </connections>
                             </collectionViewCell>
@@ -951,7 +966,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3UK-rc-wzZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yux-b5-eOa">
+                    <navigationBar key="navigationBar" alpha="0.5" contentMode="scaleToFill" id="Yux-b5-eOa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

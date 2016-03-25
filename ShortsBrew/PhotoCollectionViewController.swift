@@ -14,6 +14,7 @@ private let reuseIdentifier = "PhotoCollectionCell"
 class PhotoCollectionViewController: UICollectionViewController {
     
     var photos = ["Shorts-Brewing-3", "Shorts-Brewing-2", "shorts-10-yr", "pub", "taps", "Shorts-Brewing"]
+    var photoDescription = ["Pours smooth and creamy into the glass. The beer is an opaque and murky straw-amber color, topped with a thick and creamy foam head. Lacing is nice, with some glass-clinging action going on, and more than ample head retention.", "The beer is an opaque and murky straw-amber color, topped with a thick and creamy foam head. The beer is an opaque and murky straw-amber color, topped with a thick and creamy foam head.","Pours smooth and creamy into the glass. Pours smooth and creamy into the glass.", "The beer is an opaque and murky straw-amber color, topped with a thick and creamy foam head. Lacing is nice, with some glass-clinging action going on. The beer is an opaque and murky straw-amber color, topped with a thick and creamy foam head.","Lacing is nice, with some glass-clinging action going on, Lacing is nice, with some glass-clinging action going on.", "Pours smooth and creamy into the glass. The beer is an opaque and murky straw-amber color, topped with a thick and creamy foam head. Pours smooth and creamy into the glass. The beer is an opaque and murky straw-amber color, topped with a thick and creamy foam head."]
     
     // Sharing feature properties
     var shareEnabled = false
@@ -23,7 +24,10 @@ class PhotoCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        
+//        self.collectionView.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
 
+        self.collectionView?.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -90,6 +94,7 @@ class PhotoCollectionViewController: UICollectionViewController {
         // Configure the cell
         cell.photoImageView.image = UIImage(named: photos[indexPath.row])
       //  cell.selectedBackgroundView = UIColor.blueColor()
+        cell.photoLbl.text = photoDescription[indexPath.row]
         
         return cell
     }
