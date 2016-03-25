@@ -12,12 +12,16 @@ class BeerDetailViewController: UIViewController {
     
     @IBOutlet weak var beerLabel: UILabel!
     
+    @IBOutlet weak var beerImage: UIImageView!
+    
     var beerFromSegue: String?
+    var beerImageFromSegue: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.beerLabel.text = self.beerFromSegue
+        self.beerImage.image = self.beerImageFromSegue
     
     }
 
@@ -26,7 +30,11 @@ class BeerDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func donePressed(sender: AnyObject) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }    
+    
     /*
     // MARK: - Navigation
 
