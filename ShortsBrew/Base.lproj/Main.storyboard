@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -472,25 +471,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BNP-zJ-e89">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BNP-zJ-e89">
                                 <rect key="frame" x="20" y="75" width="560" height="505"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="BeerListCell" rowHeight="84" id="roY-hT-PV6" customClass="BeerListCell" customModule="ShortsBrew" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="84"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="BeerListCell" rowHeight="155" id="roY-hT-PV6" customClass="BeerListCell" customModule="ShortsBrew" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="roY-hT-PV6" id="W8t-ik-lYu">
-                                            <rect key="frame" x="0.0" y="0.0" width="513" height="83.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="513" height="154.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="luH-64-sib">
-                                                    <rect key="frame" x="8" y="8" width="92" height="68"/>
+                                                    <rect key="frame" x="8" y="8" width="150" height="125"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="92" id="aHF-tJ-su8"/>
+                                                        <constraint firstAttribute="height" constant="125" id="U2M-0A-bM7"/>
+                                                        <constraint firstAttribute="width" constant="150" id="aHF-tJ-su8"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MMMMKAY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPT-ZJ-2gf">
-                                                    <rect key="frame" x="108" y="8" width="444" height="44"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMMMKAY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPT-ZJ-2gf">
+                                                    <rect key="frame" x="166" y="8" width="339" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="R2J-D8-0bk"/>
                                                     </constraints>
@@ -504,65 +504,61 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.1%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jiu-u3-dK9">
-                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88.8%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1v-FT-Eeu">
+                                                    <rect key="frame" x="166" y="60" width="49" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="YJT-JK-8bH"/>
+                                                        <constraint firstAttribute="width" constant="49" id="bdl-9f-5Kb"/>
+                                                        <constraint firstAttribute="height" constant="22" id="oRY-Tp-W66"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="YJT-JK-8bH"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="YJT-JK-8bH"/>
-                                                        </mask>
-                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="thi sis a type of beer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ob-1x-Mke">
+                                                    <rect key="frame" x="166" y="90" width="339" height="37"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="37" id="Nfb-Vp-j0E"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="dPT-ZJ-2gf" firstAttribute="top" secondItem="W8t-ik-lYu" secondAttribute="topMargin" id="3O2-Zt-e4C"/>
                                                 <constraint firstItem="luH-64-sib" firstAttribute="top" secondItem="W8t-ik-lYu" secondAttribute="topMargin" id="BEw-rX-0CZ"/>
                                                 <constraint firstItem="luH-64-sib" firstAttribute="leading" secondItem="W8t-ik-lYu" secondAttribute="leadingMargin" id="OlT-qC-CmZ"/>
-                                                <constraint firstItem="Jiu-u3-dK9" firstAttribute="leading" secondItem="luH-64-sib" secondAttribute="trailing" constant="10" id="Uh8-ii-XQo"/>
+                                                <constraint firstItem="q1v-FT-Eeu" firstAttribute="leading" secondItem="luH-64-sib" secondAttribute="trailing" constant="8" id="an2-FU-TOK"/>
                                                 <constraint firstItem="dPT-ZJ-2gf" firstAttribute="trailing" secondItem="W8t-ik-lYu" secondAttribute="trailingMargin" id="ePp-W3-Cc3"/>
-                                                <constraint firstItem="Jiu-u3-dK9" firstAttribute="top" secondItem="W8t-ik-lYu" secondAttribute="topMargin" constant="10" id="fN8-P0-MKx">
-                                                    <variation key="widthClass=compact" constant="25"/>
-                                                </constraint>
-                                                <constraint firstAttribute="bottomMargin" secondItem="luH-64-sib" secondAttribute="bottom" id="fS1-he-wjA"/>
+                                                <constraint firstItem="dPT-ZJ-2gf" firstAttribute="leading" secondItem="luH-64-sib" secondAttribute="trailing" constant="8" symbolic="YES" id="eb1-nz-CRX"/>
+                                                <constraint firstItem="1ob-1x-Mke" firstAttribute="trailing" secondItem="W8t-ik-lYu" secondAttribute="trailingMargin" id="f3O-dk-XF1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="luH-64-sib" secondAttribute="bottom" constant="13.5" id="fS1-he-wjA"/>
                                                 <constraint firstItem="dPT-ZJ-2gf" firstAttribute="trailing" secondItem="W8t-ik-lYu" secondAttribute="trailingMargin" id="lX7-gu-8h9"/>
-                                                <constraint firstItem="dPT-ZJ-2gf" firstAttribute="leading" secondItem="luH-64-sib" secondAttribute="trailing" constant="8" id="nXZ-rq-l18">
+                                                <constraint firstItem="1ob-1x-Mke" firstAttribute="top" secondItem="q1v-FT-Eeu" secondAttribute="bottom" constant="8" id="lxc-cr-3aF"/>
+                                                <constraint firstItem="1ob-1x-Mke" firstAttribute="leading" secondItem="luH-64-sib" secondAttribute="trailing" constant="8" id="mxl-Ql-5pc"/>
+                                                <constraint firstItem="dPT-ZJ-2gf" firstAttribute="leading" secondItem="luH-64-sib" secondAttribute="trailing" constant="-50" id="nXZ-rq-l18">
                                                     <variation key="widthClass=compact" constant="10"/>
                                                 </constraint>
+                                                <constraint firstItem="q1v-FT-Eeu" firstAttribute="top" secondItem="dPT-ZJ-2gf" secondAttribute="bottom" constant="8" id="r0a-xX-09M"/>
+                                                <constraint firstItem="dPT-ZJ-2gf" firstAttribute="trailing" secondItem="W8t-ik-lYu" secondAttribute="trailingMargin" id="xky-3s-OoI"/>
                                             </constraints>
                                             <variation key="default">
-                                                <mask key="subviews">
-                                                    <exclude reference="Jiu-u3-dK9"/>
-                                                </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="Uh8-ii-XQo"/>
-                                                    <exclude reference="fN8-P0-MKx"/>
+                                                    <exclude reference="fS1-he-wjA"/>
+                                                    <exclude reference="ePp-W3-Cc3"/>
                                                     <exclude reference="lX7-gu-8h9"/>
+                                                    <exclude reference="nXZ-rq-l18"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
-                                                <mask key="subviews">
-                                                    <include reference="Jiu-u3-dK9"/>
-                                                </mask>
                                                 <mask key="constraints">
-                                                    <include reference="Uh8-ii-XQo"/>
-                                                    <include reference="fN8-P0-MKx"/>
                                                     <exclude reference="ePp-W3-Cc3"/>
                                                     <include reference="lX7-gu-8h9"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="abvLbl" destination="Jiu-u3-dK9" id="7Zy-9c-vYM"/>
+                                            <outlet property="abvLbl" destination="q1v-FT-Eeu" id="MyL-RO-AkB"/>
                                             <outlet property="beerImg" destination="luH-64-sib" id="tBl-0y-7uD"/>
                                             <outlet property="beerLbl" destination="dPT-ZJ-2gf" id="g8n-1H-RAl"/>
                                             <segue destination="nLB-Wv-Yjg" kind="show" identifier="showBeerDetailSegue" id="e2Y-WP-SLf"/>
@@ -606,7 +602,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlJ-Yi-Sho" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="A8z-Ac-g8b" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-46.5" y="1059"/>
+            <point key="canvasLocation" x="-47" y="1059"/>
         </scene>
         <!--BeerDetail-->
         <scene sceneID="hKM-Ol-mXJ">
