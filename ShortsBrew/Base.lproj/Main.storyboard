@@ -574,6 +574,7 @@
                                             <outlet property="abvLbl" destination="q1v-FT-Eeu" id="MyL-RO-AkB"/>
                                             <outlet property="beerImg" destination="luH-64-sib" id="tBl-0y-7uD"/>
                                             <outlet property="beerLbl" destination="dPT-ZJ-2gf" id="g8n-1H-RAl"/>
+                                            <outlet property="beerStyleLbl" destination="1ob-1x-Mke" id="Wyo-bH-Ebg"/>
                                             <segue destination="nLB-Wv-Yjg" kind="show" identifier="showBeerDetailSegue" id="e2Y-WP-SLf"/>
                                         </connections>
                                     </tableViewCell>
@@ -646,7 +647,7 @@
                                     <constraint firstAttribute="width" constant="66" id="4h4-em-YYT"/>
                                     <constraint firstAttribute="height" constant="39" id="uQH-4t-Rhs"/>
                                 </constraints>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Done"/>
                                 <connections>
                                     <segue destination="4dX-Ac-9cG" kind="unwind" unwindAction="unwindForSegue:" id="5WN-yd-Uoz"/>
                                 </connections>
