@@ -16,16 +16,19 @@ class BeerListCell: UITableViewCell {
     
     @IBOutlet weak var abvLbl: UILabel!
     
+    @IBOutlet weak var beerStyleLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    func configureCell(image: UIImage, beerName: String, abv: String) {
+    func configureCell(image: UIImage, beerName: String, abv: String, beerStyle: String) {
         
         beerImg.image = image
         beerLbl.text = beerName
         abvLbl.text = abv
+        beerStyleLbl.text = beerStyle
         
     }
     

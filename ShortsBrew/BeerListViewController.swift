@@ -16,6 +16,8 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var abv: [String] = ["5.6%","6.7%","4.7%","7.7%","3.5%","5.2%" ]
     
+    var beerStyle = ["India Pale Ale", "Special Alien Technology", "Stout", "Porter", "American Lager", "Chocolate Stout"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,7 +49,7 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
                 img = UIImage(named: "Placeholder")
             }
             
-            cell.configureCell(img, beerName: "\(beers[indexPath.row])", abv: "\(abv[indexPath.row])")
+            cell.configureCell(img, beerName: "\(beers[indexPath.row])", abv: "\(abv[indexPath.row])", beerStyle: beerStyle[indexPath.row])
             
             return cell
         } else {
@@ -87,6 +89,8 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func unwindForSegue(segue: UIStoryboardSegue) {
+    }
     
     
 }
