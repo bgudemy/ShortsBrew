@@ -99,9 +99,6 @@ class PhotoCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    @IBAction func unwindForSegue(segue: UIStoryboardSegue) {
-    }
-    
     @IBAction func shareBtnPressed(sender: AnyObject) {
         
         if shareEnabled {
@@ -175,6 +172,8 @@ class PhotoCollectionViewController: UICollectionViewController {
         }
     }
     
+    @IBAction func unwindForSegue(segue: UIStoryboardSegue) {
+    }
     
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking

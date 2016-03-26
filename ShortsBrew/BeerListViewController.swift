@@ -89,6 +89,8 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func unwindForSegue(segue: UIStoryboardSegue) {
+    }
     
     
 }

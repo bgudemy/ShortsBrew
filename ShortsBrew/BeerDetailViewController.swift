@@ -30,10 +30,10 @@ class BeerDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func donePressed(sender: AnyObject) {
-        
-        dismissViewControllerAnimated(true, completion: nil)
-    }    
+//    @IBAction func donePressed(sender: AnyObject) {
+//        
+//        dismissViewControllerAnimated(true, completion: nil)
+//    }    
     
     /*
     // MARK: - Navigation
