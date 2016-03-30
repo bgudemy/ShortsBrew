@@ -27,6 +27,12 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
             
             mapView.delegate = self
         }
+        
+        // testing api
+        let clientID = valueForAPIKey(keyname: "API_Client_ID")
+        let clientSecret = valueForAPIKey(keyname: "API_Client_Secret")
+        
+        
     }
 
     func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
