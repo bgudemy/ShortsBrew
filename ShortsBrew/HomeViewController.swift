@@ -9,10 +9,17 @@
 import UIKit
 import MapKit
 
-class HomeViewController: UIViewController, MKMapViewDelegate {
+class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
+    //Outlets
     @IBOutlet var mapView: MKMapView?
 
+    
+    //Properties
+    var locationManager: CLLocationManager?
+    var distanceSpan: Double = 500
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,10 +27,31 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
             
             mapView.delegate = self
         }
-
-    
     }
 
+    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+        
+        if let mapView = self.mapView {
+            
+            let region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, distanceSpan, distanceSpan)
+            mapView.setRegion(region, animated: true)
+        }
+    }
+        
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if locationManager == nil {
+            locationManager = CLLocationManager()
+            
+            locationManager!.delegate = self
+            locationManager!.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+            locationManager!.requestAlwaysAuthorization()
+            locationManager!.distanceFilter = 50 // doesn't send location updates until this distance has been reached
+            locationManager!.startUpdatingLocation()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
