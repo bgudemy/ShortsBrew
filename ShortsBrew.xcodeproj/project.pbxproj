@@ -14,6 +14,8 @@
 		D3544C6B1C8E7EF500F4975B /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3544C6A1C8E7EF500F4975B /* PhotosViewController.swift */; };
 		D36B316B1CAB70F80047F380 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B316A1CAB70F80047F380 /* HomeViewController.swift */; };
 		D36B316D1CAB72010047F380 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36B316C1CAB72010047F380 /* MapKit.framework */; };
+		D36B316F1CAB7CEF0047F380 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = D36B316E1CAB7CEF0047F380 /* ApiKeys.plist */; };
+		D36B31711CAB7D320047F380 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B31701CAB7D320047F380 /* ApiKeys.swift */; };
 		D37560BE1C979A6800AB3036 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37560BD1C979A6800AB3036 /* BeerListCell.swift */; };
 		D3770C581C94E750009D8AC6 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3770C571C94E750009D8AC6 /* BeerDetailViewController.swift */; };
 		D386D94F1C72D47D00A11FC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386D94E1C72D47D00A11FC0 /* AppDelegate.swift */; };
@@ -34,6 +36,8 @@
 		D3544C6A1C8E7EF500F4975B /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		D36B316A1CAB70F80047F380 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D36B316C1CAB72010047F380 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D36B316E1CAB7CEF0047F380 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = ../ApiKeys.plist; sourceTree = "<group>"; };
+		D36B31701CAB7D320047F380 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		D37560BD1C979A6800AB3036 /* BeerListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
 		D3770C571C94E750009D8AC6 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		D386D94B1C72D47D00A11FC0 /* ShortsBrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortsBrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,10 +130,12 @@
 				D36B316A1CAB70F80047F380 /* HomeViewController.swift */,
 				D386D9501C72D47D00A11FC0 /* ViewController.swift */,
 				D3A4A3391C73EA80006757ED /* DetailViewController.swift */,
+				D36B31701CAB7D320047F380 /* ApiKeys.swift */,
 				D386D9521C72D47D00A11FC0 /* Main.storyboard */,
 				D386D9551C72D47D00A11FC0 /* Assets.xcassets */,
 				D386D9571C72D47D00A11FC0 /* LaunchScreen.storyboard */,
 				D386D95A1C72D47D00A11FC0 /* Info.plist */,
+				D36B316E1CAB7CEF0047F380 /* ApiKeys.plist */,
 				D3FA8E461CA6E69700101F42 /* Podfile */,
 			);
 			path = ShortsBrew;
@@ -200,6 +206,7 @@
 				D386D9561C72D47D00A11FC0 /* Assets.xcassets in Resources */,
 				D3FA8E471CA6E69700101F42 /* Podfile in Resources */,
 				D386D9541C72D47D00A11FC0 /* Main.storyboard in Resources */,
+				D36B316F1CAB7CEF0047F380 /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A4A33A1C73EA80006757ED /* DetailViewController.swift in Sources */,
+				D36B31711CAB7D320047F380 /* ApiKeys.swift in Sources */,
 				D30A86AA1C9F028A007A8A9C /* PhotoCollectionViewCell.swift in Sources */,
 				D3770C581C94E750009D8AC6 /* BeerDetailViewController.swift in Sources */,
 				D3544C6B1C8E7EF500F4975B /* PhotosViewController.swift in Sources */,
