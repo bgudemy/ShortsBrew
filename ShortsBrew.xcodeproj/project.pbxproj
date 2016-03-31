@@ -25,6 +25,8 @@
 		D386D9561C72D47D00A11FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D386D9551C72D47D00A11FC0 /* Assets.xcassets */; };
 		D386D9591C72D47D00A11FC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D386D9571C72D47D00A11FC0 /* LaunchScreen.storyboard */; };
 		D3A4A33A1C73EA80006757ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4A3391C73EA80006757ED /* DetailViewController.swift */; };
+		D3D18B021CACBDCB00C173A5 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D18B011CACBDCB00C173A5 /* Venue.swift */; };
+		D3D18B051CACC9BB00C173A5 /* BreweryAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D18B041CACC9BB00C173A5 /* BreweryAnnotation.swift */; };
 		D3FA8E471CA6E69700101F42 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D3FA8E461CA6E69700101F42 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		D386D9581C72D47D00A11FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D386D95A1C72D47D00A11FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3A4A3391C73EA80006757ED /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D3D18B011CACBDCB00C173A5 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		D3D18B041CACC9BB00C173A5 /* BreweryAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryAnnotation.swift; sourceTree = "<group>"; };
 		D3FA8E461CA6E69700101F42 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		FB1B5D7F92E35C6DE7110175 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,22 +130,32 @@
 		D386D94D1C72D47D00A11FC0 /* ShortsBrew */ = {
 			isa = PBXGroup;
 			children = (
+				D3D18B031CACC06000C173A5 /* Model */,
 				D30A86AE1C9F02C6007A8A9C /* Photos */,
 				D30A86AD1C9F02BB007A8A9C /* Beers */,
-				D386D94E1C72D47D00A11FC0 /* AppDelegate.swift */,
 				D36B316A1CAB70F80047F380 /* HomeViewController.swift */,
 				D386D9501C72D47D00A11FC0 /* ViewController.swift */,
 				D3A4A3391C73EA80006757ED /* DetailViewController.swift */,
-				D36B31721CAB7F540047F380 /* BreweriesAPI.swift */,
-				D36B31701CAB7D320047F380 /* ApiKeys.swift */,
 				D386D9521C72D47D00A11FC0 /* Main.storyboard */,
 				D386D9551C72D47D00A11FC0 /* Assets.xcassets */,
 				D386D9571C72D47D00A11FC0 /* LaunchScreen.storyboard */,
+				D386D94E1C72D47D00A11FC0 /* AppDelegate.swift */,
 				D386D95A1C72D47D00A11FC0 /* Info.plist */,
 				D36B316E1CAB7CEF0047F380 /* ApiKeys.plist */,
 				D3FA8E461CA6E69700101F42 /* Podfile */,
 			);
 			path = ShortsBrew;
+			sourceTree = "<group>";
+		};
+		D3D18B031CACC06000C173A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3D18B011CACBDCB00C173A5 /* Venue.swift */,
+				D36B31701CAB7D320047F380 /* ApiKeys.swift */,
+				D36B31721CAB7F540047F380 /* BreweriesAPI.swift */,
+				D3D18B041CACC9BB00C173A5 /* BreweryAnnotation.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,12 +287,14 @@
 				D30A86AA1C9F028A007A8A9C /* PhotoCollectionViewCell.swift in Sources */,
 				D3770C581C94E750009D8AC6 /* BeerDetailViewController.swift in Sources */,
 				D3544C6B1C8E7EF500F4975B /* PhotosViewController.swift in Sources */,
+				D3D18B051CACC9BB00C173A5 /* BreweryAnnotation.swift in Sources */,
 				D30A86AC1C9F02B1007A8A9C /* PhotoCollectionViewController.swift in Sources */,
 				D36B316B1CAB70F80047F380 /* HomeViewController.swift in Sources */,
 				D34A86CA1C93875E00FFEEB4 /* BeerListViewController.swift in Sources */,
 				D37560BE1C979A6800AB3036 /* BeerListCell.swift in Sources */,
 				D386D9511C72D47D00A11FC0 /* ViewController.swift in Sources */,
 				D386D94F1C72D47D00A11FC0 /* AppDelegate.swift in Sources */,
+				D3D18B021CACBDCB00C173A5 /* Venue.swift in Sources */,
 				D36B31731CAB7F540047F380 /* BreweriesAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

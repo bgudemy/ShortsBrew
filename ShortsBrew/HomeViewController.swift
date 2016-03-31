@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import RealmSwift
 
 class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
@@ -15,11 +16,18 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     @IBOutlet var mapView: MKMapView?
 
     
-    //Properties
+//Properties
     var locationManager: CLLocationManager?
     var distanceSpan: Double = 500
     
+    var lastLocation: CLLocation?
+    var venues: [Venue]?
     
+    // testing api
+    let clientID = valueForAPIKey(keyname: "API_Client_ID")
+    let clientSecret = valueForAPIKey(keyname: "API_Client_Secret")
+
+//
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,23 +35,52 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
             
             mapView.delegate = self
         }
-        
-        // testing api
-        let clientID = valueForAPIKey(keyname: "API_Client_ID")
-        let clientSecret = valueForAPIKey(keyname: "API_Client_Secret")
-        
+
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("onVenuesUpdated:"), name: API.notifications.venuesUpdated, object: nil)
         
     }
 
+//
     func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
         
         if let mapView = self.mapView {
             
             let region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, distanceSpan, distanceSpan)
             mapView.setRegion(region, animated: true)
+            
+            refreshVenues(newLocation, getDataFromFoursquare: true)
         }
     }
+    
+    func refreshVenues(location: CLLocation?, getDataFromFoursquare:Bool = false) {
+        if location != nil {
+            
+            lastLocation = location
+        }
         
+        if let location = lastLocation {
+            if getDataFromFoursquare == true {
+                
+                BreweriesAPI.sharedInstance.getBreweriesWithLocation(location)
+            }
+            
+            let realm = try! Realm()
+            
+            venues = realm.objects(Venue)
+            
+            for venue in venues! {
+                
+                let annotation = BreweryAnnotation(title: venue.name, subtitle: venue.address, coordinate: CLLocationCoordinate2D(latitude: Double(venue.latitude), longitude: Double(venue.longitude)))
+                
+                mapView?.addAnnotation(annotation)
+            }
+        }
+    }
+    
+    func onVenuesUpdated(notification:NSNotification) {
+        
+        refreshVenues(nil)
+    }
     
     override func viewDidAppear(animated: Bool) {
         
@@ -62,7 +99,26 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView?
+    {
+        if annotation.isKindOfClass(MKUserLocation)
+        {
+            return nil
+        }
+        
+        var view = mapView.dequeueReusableAnnotationViewWithIdentifier("annotationIdentifier")
+        
+        if view == nil
+        {
+            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "annotationIdentifier")
+        }
+        
+        view?.canShowCallout = true
+        
+        return view
+    }
+
     
     /*
     // MARK: - Navigation
