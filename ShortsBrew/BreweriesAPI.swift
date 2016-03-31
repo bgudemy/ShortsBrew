@@ -115,8 +115,8 @@ class BreweriesAPI {
 
 extension CLLocation {
     
-    func parameters() -> Parameters
-    {
+    func parameters() -> Parameters {
+        
         let ll      = "\(self.coordinate.latitude),\(self.coordinate.longitude)"
         let llAcc   = "\(self.horizontalAccuracy)"
         let alt     = "\(self.altitude)"
@@ -127,6 +127,7 @@ extension CLLocation {
             Parameter.alt:alt,
             Parameter.altAcc:altAcc
         ]
+        
         return parameters
     }
 }

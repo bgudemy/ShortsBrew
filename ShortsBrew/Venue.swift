@@ -20,7 +20,7 @@ class Venue: Object {
     
     dynamic var address: String = ""
     
-    var coordintae: CLLocation {
+    var coordinate: CLLocation {
         
         return CLLocation(latitude: Double(latitude), longitude: Double(longitude))
     }
@@ -29,7 +29,5 @@ class Venue: Object {
 
         return "id"
     }
-
-
 
 }
