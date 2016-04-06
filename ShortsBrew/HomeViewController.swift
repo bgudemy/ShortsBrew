@@ -192,7 +192,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         
         if (segue.identifier == "BrewerySegue") {
             
-            var nextView: ViewController = segue.destinationViewController as! ViewController
+            let nextView: ViewController = segue.destinationViewController as! ViewController
             
             if let indexPath = self.tableView!.indexPathForSelectedRow {
                 
@@ -205,15 +205,11 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
                 self.tableView!.deselectRowAtIndexPath(indexPath, animated: true)
 
                 print("seguing from the HomeVC with the Brewery: \(self.venues![indexPath.row])")
-
             }
         }
     }
     
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//        self.performSegueWithIdentifier("showBeerDetailSegue", sender: self)
-//    }
-    
+    @IBAction func unwindForSegue(unwindSegue: UIStoryboardSegue) {
+    }
 
 }
