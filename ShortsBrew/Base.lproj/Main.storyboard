@@ -280,6 +280,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="J5c-aj-X7D" id="YG4-QK-a7r"/>
                         <outlet property="moreBtn" destination="UtH-Z5-wn9" id="GcZ-4n-0CO"/>
                         <outlet property="tapsBtn" destination="njw-fm-g56" id="y37-Jr-ZaT"/>
                     </connections>

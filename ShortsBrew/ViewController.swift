@@ -13,9 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var tapsBtn: UIButton!
     
+    @IBOutlet weak var addressLabel: UILabel!
+    
+    
     // Properties
     var breweryFromSegue: Venue?
-    
     
     
     override func viewDidLoad() {
@@ -24,6 +26,10 @@ class ViewController: UIViewController {
         moreBtn.layer.cornerRadius = 5.0
         tapsBtn.layer.cornerRadius = 5.0
     
+        
+        if let breweryName = breweryFromSegue?.name {
+            self.addressLabel.text = breweryName
+        }
     }
 
     override func didReceiveMemoryWarning() {
