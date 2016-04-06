@@ -19,7 +19,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     
 //Properties
     var locationManager: CLLocationManager?
-    var distanceSpan: Double = 500
+    var distanceSpan: Double = 50000
 
     var lastLocation: CLLocation?
     

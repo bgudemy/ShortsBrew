@@ -40,9 +40,9 @@ class BreweriesAPI {
         if let session = self.session {
             
             var parameters = location.parameters()
-            parameters += [Parameter.categoryId: "4bf58dd8d48988d1e0931735"]
-            parameters += [Parameter.radius: "2000"]
-            parameters += [Parameter.limit: "50"]
+            parameters += [Parameter.categoryId: "50327c8591d4c4b30a586d5d"]
+          //  parameters += [Parameter.radius: "5000"] // If a radius is not specified, a suggested search radius will be provided optimized based on the density of the venues in the location 
+            parameters += [Parameter.limit: "25"]
             
             // Start an async call to Foursquare
             let searchTask = session.venues.search(parameters) {
