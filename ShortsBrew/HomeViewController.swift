@@ -179,16 +179,41 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
             let region = MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2D(latitude: Double(venue.latitude), longitude: Double(venue.longitude)), distanceSpan, distanceSpan)
             mapView?.setRegion(region, animated: true)
         }
+        
+        self.performSegueWithIdentifier("BrewerySegue", sender: self)
+
     }
     
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        //   print("\(self.tableView.indexPathForSelectedRow!) was selected ")
+        
+        if (segue.identifier == "BrewerySegue") {
+            
+            var nextView: ViewController = segue.destinationViewController as! ViewController
+            
+            if let indexPath = self.tableView!.indexPathForSelectedRow {
+                
+                let brewerySelected = self.venues![indexPath.row]
+             //   let beerImageSelected = UIImage(named: "\(beers[indexPath.row])")
+                
+                nextView.breweryFromSegue = brewerySelected
+    //            nextView.beerImageFromSegue = beerImageSelected
+                
+                self.tableView!.deselectRowAtIndexPath(indexPath, animated: true)
+
+                print("seguing from the HomeVC with the Brewery: \(self.venues![indexPath.row])")
+
+            }
+        }
     }
-    */
+    
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//        self.performSegueWithIdentifier("showBeerDetailSegue", sender: self)
+//    }
+    
 
 }

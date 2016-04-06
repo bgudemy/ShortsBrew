@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var tapsBtn: UIButton!
     
+    // Properties
+    var breweryFromSegue: Venue?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
