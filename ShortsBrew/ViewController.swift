@@ -13,7 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var tapsBtn: UIButton!
     
-    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var breweryAddressLabel: UILabel!
+    @IBOutlet weak var breweryNameLabel: UILabel!
+    
     
     
     // Properties
@@ -28,8 +30,13 @@ class ViewController: UIViewController {
     
         
         if let breweryName = breweryFromSegue?.name {
-            self.addressLabel.text = breweryName
+            self.breweryNameLabel.text = breweryName
         }
+        
+        if let breweryAddress = breweryFromSegue?.address {
+            self.breweryAddressLabel.text = breweryAddress
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
