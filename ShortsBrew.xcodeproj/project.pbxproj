@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6144299EB0554D189D7BA6F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398AB68AE986E0D731DC5C83 /* Pods.framework */; };
 		D30A86AA1C9F028A007A8A9C /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A86A91C9F028A007A8A9C /* PhotoCollectionViewCell.swift */; };
 		D30A86AC1C9F02B1007A8A9C /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A86AB1C9F02B1007A8A9C /* PhotoCollectionViewController.swift */; };
 		D34A86CA1C93875E00FFEEB4 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A86C91C93875E00FFEEB4 /* BeerListViewController.swift */; };
 		D3544C6B1C8E7EF500F4975B /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3544C6A1C8E7EF500F4975B /* PhotosViewController.swift */; };
+		D36B316B1CAB70F80047F380 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B316A1CAB70F80047F380 /* HomeViewController.swift */; };
+		D36B316D1CAB72010047F380 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36B316C1CAB72010047F380 /* MapKit.framework */; };
+		D36B316F1CAB7CEF0047F380 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = D36B316E1CAB7CEF0047F380 /* ApiKeys.plist */; };
+		D36B31711CAB7D320047F380 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B31701CAB7D320047F380 /* ApiKeys.swift */; };
+		D36B31731CAB7F540047F380 /* BreweriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B31721CAB7F540047F380 /* BreweriesAPI.swift */; };
 		D37560BE1C979A6800AB3036 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37560BD1C979A6800AB3036 /* BeerListCell.swift */; };
 		D3770C581C94E750009D8AC6 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3770C571C94E750009D8AC6 /* BeerDetailViewController.swift */; };
 		D386D94F1C72D47D00A11FC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386D94E1C72D47D00A11FC0 /* AppDelegate.swift */; };
@@ -19,13 +25,23 @@
 		D386D9561C72D47D00A11FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D386D9551C72D47D00A11FC0 /* Assets.xcassets */; };
 		D386D9591C72D47D00A11FC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D386D9571C72D47D00A11FC0 /* LaunchScreen.storyboard */; };
 		D3A4A33A1C73EA80006757ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4A3391C73EA80006757ED /* DetailViewController.swift */; };
+		D3D18B021CACBDCB00C173A5 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D18B011CACBDCB00C173A5 /* Venue.swift */; };
+		D3D18B051CACC9BB00C173A5 /* BreweryAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D18B041CACC9BB00C173A5 /* BreweryAnnotation.swift */; };
+		D3FA8E471CA6E69700101F42 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D3FA8E461CA6E69700101F42 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		398AB68AE986E0D731DC5C83 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A465A647A04FF038213B73 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D30A86A91C9F028A007A8A9C /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		D30A86AB1C9F02B1007A8A9C /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		D34A86C91C93875E00FFEEB4 /* BeerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		D3544C6A1C8E7EF500F4975B /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		D36B316A1CAB70F80047F380 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D36B316C1CAB72010047F380 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D36B316E1CAB7CEF0047F380 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = ../ApiKeys.plist; sourceTree = "<group>"; };
+		D36B31701CAB7D320047F380 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		D36B31721CAB7F540047F380 /* BreweriesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweriesAPI.swift; sourceTree = "<group>"; };
 		D37560BD1C979A6800AB3036 /* BeerListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
 		D3770C571C94E750009D8AC6 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		D386D94B1C72D47D00A11FC0 /* ShortsBrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortsBrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +52,10 @@
 		D386D9581C72D47D00A11FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D386D95A1C72D47D00A11FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3A4A3391C73EA80006757ED /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D3D18B011CACBDCB00C173A5 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		D3D18B041CACC9BB00C173A5 /* BreweryAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryAnnotation.swift; sourceTree = "<group>"; };
+		D3FA8E461CA6E69700101F42 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		FB1B5D7F92E35C6DE7110175 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36B316D1CAB72010047F380 /* MapKit.framework in Frameworks */,
+				B6144299EB0554D189D7BA6F /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11B4F491CEE94DB41178A9CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87A465A647A04FF038213B73 /* Pods.debug.xcconfig */,
+				FB1B5D7F92E35C6DE7110175 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D5F3F8337356E50F2B7AE9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D36B316C1CAB72010047F380 /* MapKit.framework */,
+				398AB68AE986E0D731DC5C83 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D30A86AD1C9F02BB007A8A9C /* Beers */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +114,8 @@
 			children = (
 				D386D94D1C72D47D00A11FC0 /* ShortsBrew */,
 				D386D94C1C72D47D00A11FC0 /* Products */,
+				11B4F491CEE94DB41178A9CF /* Pods */,
+				5D5F3F8337356E50F2B7AE9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,17 +130,32 @@
 		D386D94D1C72D47D00A11FC0 /* ShortsBrew */ = {
 			isa = PBXGroup;
 			children = (
+				D3D18B031CACC06000C173A5 /* Model */,
 				D30A86AE1C9F02C6007A8A9C /* Photos */,
 				D30A86AD1C9F02BB007A8A9C /* Beers */,
-				D386D94E1C72D47D00A11FC0 /* AppDelegate.swift */,
+				D36B316A1CAB70F80047F380 /* HomeViewController.swift */,
 				D386D9501C72D47D00A11FC0 /* ViewController.swift */,
 				D3A4A3391C73EA80006757ED /* DetailViewController.swift */,
 				D386D9521C72D47D00A11FC0 /* Main.storyboard */,
 				D386D9551C72D47D00A11FC0 /* Assets.xcassets */,
 				D386D9571C72D47D00A11FC0 /* LaunchScreen.storyboard */,
+				D386D94E1C72D47D00A11FC0 /* AppDelegate.swift */,
 				D386D95A1C72D47D00A11FC0 /* Info.plist */,
+				D36B316E1CAB7CEF0047F380 /* ApiKeys.plist */,
+				D3FA8E461CA6E69700101F42 /* Podfile */,
 			);
 			path = ShortsBrew;
+			sourceTree = "<group>";
+		};
+		D3D18B031CACC06000C173A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3D18B011CACBDCB00C173A5 /* Venue.swift */,
+				D36B31701CAB7D320047F380 /* ApiKeys.swift */,
+				D36B31721CAB7F540047F380 /* BreweriesAPI.swift */,
+				D3D18B041CACC9BB00C173A5 /* BreweryAnnotation.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D386D95D1C72D47D00A11FC0 /* Build configuration list for PBXNativeTarget "ShortsBrew" */;
 			buildPhases = (
+				47E279C98B933F43E627B8D6 /* Check Pods Manifest.lock */,
 				D386D9471C72D47D00A11FC0 /* Sources */,
 				D386D9481C72D47D00A11FC0 /* Frameworks */,
 				D386D9491C72D47D00A11FC0 /* Resources */,
+				D8FBFFFCB4EA2766D6C5BB2F /* Embed Pods Frameworks */,
+				F53AD994127590094D0ED4FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,11 +221,61 @@
 			files = (
 				D386D9591C72D47D00A11FC0 /* LaunchScreen.storyboard in Resources */,
 				D386D9561C72D47D00A11FC0 /* Assets.xcassets in Resources */,
+				D3FA8E471CA6E69700101F42 /* Podfile in Resources */,
 				D386D9541C72D47D00A11FC0 /* Main.storyboard in Resources */,
+				D36B316F1CAB7CEF0047F380 /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47E279C98B933F43E627B8D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8FBFFFCB4EA2766D6C5BB2F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F53AD994127590094D0ED4FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D386D9471C72D47D00A11FC0 /* Sources */ = {
@@ -173,14 +283,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A4A33A1C73EA80006757ED /* DetailViewController.swift in Sources */,
+				D36B31711CAB7D320047F380 /* ApiKeys.swift in Sources */,
 				D30A86AA1C9F028A007A8A9C /* PhotoCollectionViewCell.swift in Sources */,
 				D3770C581C94E750009D8AC6 /* BeerDetailViewController.swift in Sources */,
 				D3544C6B1C8E7EF500F4975B /* PhotosViewController.swift in Sources */,
+				D3D18B051CACC9BB00C173A5 /* BreweryAnnotation.swift in Sources */,
 				D30A86AC1C9F02B1007A8A9C /* PhotoCollectionViewController.swift in Sources */,
+				D36B316B1CAB70F80047F380 /* HomeViewController.swift in Sources */,
 				D34A86CA1C93875E00FFEEB4 /* BeerListViewController.swift in Sources */,
 				D37560BE1C979A6800AB3036 /* BeerListCell.swift in Sources */,
 				D386D9511C72D47D00A11FC0 /* ViewController.swift in Sources */,
 				D386D94F1C72D47D00A11FC0 /* AppDelegate.swift in Sources */,
+				D3D18B021CACBDCB00C173A5 /* Venue.swift in Sources */,
+				D36B31731CAB7F540047F380 /* BreweriesAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +406,7 @@
 		};
 		D386D95E1C72D47D00A11FC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A465A647A04FF038213B73 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShortsBrew/Info.plist;
@@ -302,6 +418,7 @@
 		};
 		D386D95F1C72D47D00A11FC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB1B5D7F92E35C6DE7110175 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShortsBrew/Info.plist;

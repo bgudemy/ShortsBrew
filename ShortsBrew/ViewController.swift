@@ -13,12 +13,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var tapsBtn: UIButton!
     
+    @IBOutlet weak var breweryAddressLabel: UILabel!
+    @IBOutlet weak var breweryNameLabel: UILabel!
+    
+    
+    
+    // Properties
+    var breweryFromSegue: Venue?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         moreBtn.layer.cornerRadius = 5.0
         tapsBtn.layer.cornerRadius = 5.0
     
+        
+        if let breweryName = breweryFromSegue?.name {
+            self.breweryNameLabel.text = breweryName
+        }
+        
+        if let breweryAddress = breweryFromSegue?.address {
+            self.breweryAddressLabel.text = breweryAddress
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
